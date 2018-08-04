@@ -1,0 +1,86 @@
+html, body{
+    height: 100%;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#aebced+0,98cff8+100 */
+    background: #aebced; /* Old browsers */
+    background: -moz-linear-gradient(45deg, #aebced 0%, #98cff8 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #aebced 0%,#98cff8 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #aebced 0%,#98cff8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aebced', endColorstr='#98cff8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+
+:local(.trianglewrapper){
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    position: absolute;
+    top: 13%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: top 1s ease-in-out;
+
+}
+:local(.triangle){
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    transform: translateX(-50%) translateY(-50%) ;
+    background: white;
+    border: 1px ;
+    border-radius: 50%;
+    animation: toDown 3s ease-in-out infinite;
+    box-shadow: 0px 8px 10px rgba(0,0,0,0.1);
+}
+:local(.formwrapper ) {
+
+    height: 555px  !important;
+    max-width: 445px !important;
+    width: 90%;
+    overflow: hidden;
+
+    position: relative;
+    /*box-shadow: 0px 5px 7px rgba(0,0,0,0.5);*/
+}
+
+:local(.triangleBottom){
+    top: 83% !important;
+}
+
+:local(.left){
+    width: 40%;
+    height: 10%;
+    position: absolute;
+    border: 1px;
+    background: #7D90FF;
+    border-radius: 25px;
+    transform: translateX(45%) translateY(480%) rotate(45deg);
+}
+:local(.right){
+    width: 40%;
+    height: 10%;
+    position: absolute;
+    border: 1px;
+    background: #7D90FF;
+    border-radius: 25px;
+    transform: translateX(103%) translateY(480%) rotate(-45deg);
+}
+
+@keyframes toDown {
+    0%{
+        transform: translateX(-50%) translateY(-50%) ;
+    }
+
+
+    50%{
+        transform: translateX(-50%) translateY(-40%) ;
+    }
+    100%{
+        transform: translateX(-50%) translateY(-50%) ;
+    }
+
+
+
+}
